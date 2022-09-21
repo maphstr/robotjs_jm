@@ -1,7 +1,7 @@
 {
-  "name": "robotjs",
-  "version": "0.6.0",
-  "description": "Node.js Desktop Automation.",
+  "name": "robotjs_jm",
+  "version": "0.6.1",
+  "description": "Node.js Desktop Automation. Forked for JM Robotics",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
@@ -9,8 +9,8 @@
     "test:darwin:linux": "jasmine test/**/*.js",
     "test-keyboard": "node test/keyboard.js",
     "test:win32": "jasmine test/**/*.js",
-    "install": "prebuild-install || node-gyp rebuild",
-    "install-debug": "prebuild-install || node-gyp rebuild --debug",
+    "install": "prebuild-install || node-gyp rebuild --target=20.1.4 --arch=x64 --dist-url=https://electronjs.org/headers",
+    "install-debug": "prebuild-install || node-gyp rebuild --target=20.1.4 --arch=x64 --dist-url=https://electronjs.org/headers --debug",
     "prebuild": "prebuild --all"
   },
   "repository": {
@@ -34,15 +34,15 @@
     "learning",
     "color"
   ],
-  "author": "Jason Stallings",
+  "author": "Jason Stallings, mads@jmrobotics.no",
   "license": "MIT",
   "gypfile": true,
   "bugs": {
-    "url": "https://github.com/octalmage/robotjs/issues"
+    "url": "https://github.com/maphstr/robotjs_jm/issues"
   },
-  "homepage": "https://github.com/octalmage/robotjs",
+  "homepage": "https://github.com/maphstr/robotjs_jm",
   "dependencies": {
-    "nan": "^2.14.2",
+    "nan": "^2.16.0",
     "prebuild-install": "^5.3.3"
   },
   "devDependencies": {
