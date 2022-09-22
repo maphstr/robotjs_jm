@@ -28,7 +28,8 @@
             '-framework ApplicationServices',
             '-framework OpenGL'
           ]
-        }
+        },
+
       }],
       
       ['OS == "linux"', {
@@ -61,6 +62,9 @@
       'src/screengrab.c',
       'src/snprintf.c',
       'src/MMBitmap.c'
-    ]
+    ],
+    'xcode_settings': {
+      'CLANG_CXX_LANGUAGE_STANDARD': 'c++17'
+    }    
   }]
 }
